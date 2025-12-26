@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dealerships</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Contact Us Content -->
+  <div class="container" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 style="margin-bottom: 30px;">Contact Us</h1>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 50px;">
+          Have questions about our vehicles or services? We'd love to hear from you! 
+          Reach out to us using any of the methods below.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      
+      <!-- Address Card -->
+      <div class="col-md-4">
+        <div class="card text-center" style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%;">
+          <div style="font-size: 3rem; color: darkturquoise; margin-bottom: 20px;">
+            📍
+          </div>
+          <h4 style="margin-bottom: 15px;">Our Location</h4>
+          <p style="color: #666; line-height: 1.8;">
+            123 Auto Drive<br>
+            Downtown District<br>
+            New York, NY 10001<br>
+            United States
+          </p>
+        </div>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="col-md-4">
+        <div class="card text-center" style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%;">
+          <div style="font-size: 3rem; color: darkturquoise; margin-bottom: 20px;">
+            📞
+          </div>
+          <h4 style="margin-bottom: 15px;">Phone</h4>
+          <p style="color: #666; line-height: 1.8;">
+            <strong>Sales:</strong> (555) 123-4567<br>
+            <strong>Service:</strong> (555) 123-4568<br>
+            <strong>Parts:</strong> (555) 123-4569<br>
+            <strong>Mon-Fri:</strong> 9AM - 7PM<br>
+            <strong>Sat-Sun:</strong> 10AM - 6PM
+          </p>
+        </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="col-md-4">
+        <div class="card text-center" style="padding: 30px; border: 1px solid #ddd; border-radius: 8px; height: 100%;">
+          <div style="font-size: 3rem; color: darkturquoise; margin-bottom: 20px;">
+            ✉️
+          </div>
+          <h4 style="margin-bottom: 15px;">Email</h4>
+          <p style="color: #666; line-height: 1.8;">
+            <strong>General Inquiries:</strong><br>
+            <a href="mailto:info@bestcars.com" style="color: darkturquoise; text-decoration: none;">info@bestcars.com</a><br><br>
+            <strong>Sales:</strong><br>
+            <a href="mailto:sales@bestcars.com" style="color: darkturquoise; text-decoration: none;">sales@bestcars.com</a><br><br>
+            <strong>Support:</strong><br>
+            <a href="mailto:support@bestcars.com" style="color: darkturquoise; text-decoration: none;">support@bestcars.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="row" style="margin-top: 60px; margin-bottom: 60px;">
+      <div class="col-md-8 offset-md-2">
+        <div class="card" style="padding: 40px; border: 1px solid #ddd; border-radius: 8px;">
+          <h3 style="text-align: center; margin-bottom: 30px;">Send Us a Message</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="(555) 123-4567">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select class="form-control" id="subject" required>
+                <option value="">Select a subject</option>
+                <option value="sales">Sales Inquiry</option>
+                <option value="service">Service Appointment</option>
+                <option value="parts">Parts Request</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-lg" style="background-color: darkturquoise; color: white; padding: 12px 40px; border: none; border-radius: 5px;">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
