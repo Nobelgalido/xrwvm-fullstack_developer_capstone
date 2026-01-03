@@ -1,0 +1,18 @@
+{
+  "name": "carsinventory",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.22.1",
+    "mongodb": "^6.21.0",
+    "mongoose": "^8.21.0"
+  }
+}

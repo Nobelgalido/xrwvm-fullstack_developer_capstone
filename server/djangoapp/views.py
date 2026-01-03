@@ -8,13 +8,19 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
 from .models import CarMake, CarModel
-from .restapis import get_request, analyze_review_sentiments, post_review
+from .restapis import get_request, analyze_review_sentiments, post_review, searchcars_request
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
 
 
-# Create your views here.
+def get_inventory(request, dealer_id):
+    if dealer_id:
+        endpoint = "/cars/" + str(dealer_id)
+        cars = searchcars_request(endpoint)
+        return JsonResponse({"status": 200, "cars": cars})
+    else:
+        return JsonResponse({"status": 400, "message": "Bad Request"})
 
 # Create a `login_request` view to handle sign in request
 @csrf_exempt
