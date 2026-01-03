@@ -165,10 +165,6 @@ kubectl apply -f deployment.yaml
 - ✅ CI/CD pipeline with GitHub Actions
 - ✅ Automated code quality checks
 
-## 📸 Screenshots
-
-*Add your deployment screenshots here*
-
 ## 🤝 Contributing
 
 This is a capstone project for educational purposes. Feel free to fork and adapt for your own learning!
@@ -187,14 +183,12 @@ This project is part of the IBM Full Stack Software Developer Professional Certi
 ## 🎓 Certifications
 
 - IBM Full Stack Software Developer Professional Certificate
-- AWS Cloud Practitioner (In Progress)
 
 ## 🙏 Acknowledgments
 
 - IBM Skills Network for the comprehensive curriculum
-- Anthropic's Claude for development assistance
 - The open-source community for amazing tools and libraries
-
+- 
 ---
 
 **Built with ❤️ as part of my journey to becoming a full-stack developer**
