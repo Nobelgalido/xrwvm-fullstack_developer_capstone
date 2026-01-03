@@ -1,14 +1,14 @@
 table{
     margin:5px;
     padding:10px;
-    border: grey solid 1px;
+    border: solid purple 1px;
     width:100%
   }
   
   td{
     padding:10px;
     align-self: center;
-    border:solid grey .5px;
+    border:solid purple .5px;
     text-align: center;
     font-size: large;
   }
@@ -16,7 +16,7 @@ table{
   .review_panel{
     display: flex;
     flex-direction: column;
-    border: solid grey;
+    border: solid purple;
     position: relative;
     height:7cm;
     width:6cm;
@@ -58,12 +58,16 @@ table{
   .reviewer {
     margin: 10px; /* Optional margin for spacing */
     font-style: italic;
-    color: gray;
-    font-size: small;
+    color: #808080;
+    font-size: 18px;
+    text-align: center;
 }
 
 .review {
   margin-top: 1.5cm;
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 16px;
 }
 
 .emotion_icon {
@@ -84,5 +88,5 @@ table{
 
 .review_icon:hover {
   transform: scale(1.1);
-  border: solid lightgray;
+  border: 2px solid #080808;
 }
