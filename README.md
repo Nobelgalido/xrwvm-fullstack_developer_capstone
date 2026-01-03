@@ -9,7 +9,6 @@ A comprehensive dealership management platform built as the capstone project for
 - **Review System**: Submit and view dealership reviews with sentiment analysis
 - **Car Inventory Search**: Advanced filtering by make, model, year, mileage, and price
 - **Real-time Sentiment Analysis**: Automated review sentiment classification using IBM Watson NLU
-- **Responsive Design**: Tactical dark-themed UI optimized for all devices
 
 ## 🛠️ Tech Stack
 
